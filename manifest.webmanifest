@@ -1,7 +1,7 @@
 {
     "short_name": "Starwars Wiki",
     "name": "Starwars Wiki PWA",
-    "start_url": ".",
+    "start_url": "https://starwarswikiattgeraldo.netlify.app/login.html",
     "display": "standalone",
     "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
