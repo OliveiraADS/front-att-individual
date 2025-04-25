@@ -1,0 +1,133 @@
+body {
+    background-color: #161616;
+    color: white;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 48px;
+    width: 48px;
+    margin-right: 12px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+}
+
+h1 {
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+}
+
+.films-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px; /* Tamanho máximo para desktop */
+    flex-direction: row;
+    justify-content: center; /* Centraliza os cartões */
+}
+
+.film-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 360px;
+    width: 240px;
+    background-color: red; /* Fallback */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 16px;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal{
+    visibility: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.modal-content {
+    width: 50vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px;
+    color: #161616;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para tablets (telas menores que 1024px) */
+@media (max-width: 1024px) {
+    .films-list {
+        width: 90%; /* Ajusta a largura para tablets */
+    }
+
+    .film-card {
+        width: 45%; /* Dois cartões por linha */
+        margin-right: 5%;
+        height: 300px; /* Altura menor para tablets */
+    }
+}
+
+/* Para celulares (telas menores que 768px) */
+@media (max-width: 768px) {
+    .films-list {
+        width: 100%; /* Ocupa toda a largura da tela */
+        padding: 0 10px; /* Adiciona um pouco de espaço nas laterais */
+    }
+
+    .film-card {
+        width: 100%; /* Um cartão por linha */
+        margin-right: 0;
+        height: 250px; /* Altura menor para celulares */
+    }
+
+    .header {
+        flex-direction: column; /* Alinha o logo e o título verticalmente */
+        text-align: center;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px; /* Espaço entre o logo e o título */
+    }
+}
+
+/* Para telas muito pequenas (celulares pequenos, menores que 480px) */
+@media (max-width: 480px) {
+    .film-card {
+        height: 200px; /* Altura ainda menor para celulares pequenos */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+}

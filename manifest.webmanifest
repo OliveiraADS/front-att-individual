@@ -1,0 +1,26 @@
+{
+    "short_name": "Starwars Wiki",
+    "name": "Starwars Wiki PWA",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "description": "Pesquise seus filmes favoritos de Star Wars '-'",
+    "icons": [
+        {
+            "src": "img/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "img/icons/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+          },
+          {
+            "src": "img/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
+    ]
+  }

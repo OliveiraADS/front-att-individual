@@ -1,0 +1,59 @@
+body{
+    background-color: #161616;
+    color: white;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo{
+    height: 48px;
+    width: 48px;
+    margin-right: 12px;
+}
+
+.header{
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1{
+    font-family: Arial;
+}
+
+
+.films-list{
+    display: flex; /*Deixa os elementos flexivel para ajustes*/
+    flex-wrap: wrap; /* caso os elementos utrapassem o tamnho da DIV, quebra a linha e continua..*/
+    width: 800px; /* tamanho maximo da DIV*/
+    flex-direction: row; /* deixa os elementos em formato de linha, 1,2,3,4 ... */
+
+}
+
+.film-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 360px;
+    width: 240px;
+    background-color: red; /* Essa cor de fundo é só um fallback */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área da div */
+    background-position: center; /* Alinha a imagem no centro */
+    margin-bottom: 16px;
+    margin-right: 10px;
+    position: relative; /* Necessário para garantir que o conteúdo apareça acima da imagem de fundo */
+    overflow: hidden;
+    border-radius: 5px;
+}

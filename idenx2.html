@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main2.css">
+    <script src="src/main.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img  class="logo" src="/img/LogoEmpire.png" alt="starwars-wiki-logo">
+            <h1>Starwar wiki</h1>
+        </div>
+        <div class="films-list" id="films-list"> <!-- Div FimeCard (gerada atras do Back src/main.js)--></div>
+        <div class="modal" id="modal" onclick="hideModal()">
+          <div class="modal-content" id="modal-content">
+
+          </div>
+        </div>
+    </div>
+
+
+    <script> //Service Worker
+        // Verifica se o navegador suporta Service Worker
+        if ('serviceWorker' in navigator) {
+          // Registra o arquivo "service-worker.js"
+          navigator.serviceWorker.register('service-worker.js')
+            .then((reg) => {
+              // Se deu certo, mostra no console
+              console.log('Service Worker registrado com sucesso:', reg.scope);
+            })
+            .catch((err) => {
+              // Se deu erro, mostra o erro no console
+              console.log('Erro ao registrar o Service Worker:', err);
+            });
+        }
+      </script>
+</body>
+</html>
