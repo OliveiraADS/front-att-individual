@@ -1,5 +1,5 @@
 // URL base da API
-const API_URL = 'http://localhost:3000/api/films';
+const API_URL = 'https://starwars-api-5gzh.onrender.com/api/films';
 
 // Estado atual: armazena o ID do filme em edição
 let currentFilmId = null;

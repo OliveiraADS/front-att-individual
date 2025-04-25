@@ -1,5 +1,5 @@
 // URL base da API (endereço do nosso servidor backend)
-const API_URL = 'http://localhost:3000/api/users';
+const API_URL = 'https://starwars-api-5gzh.onrender.com/api/users';
 
 // Quando o documento HTML estiver completamente carregado, vamos executar a função abaixo
 document.addEventListener('DOMContentLoaded', function() {
